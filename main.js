@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const { Intents } = require('discord.js');
-const config = require('./config.json');
 var prefix = "%"
 const bot = new Discord.Client({
     intents: [
@@ -13,7 +12,7 @@ const bot = new Discord.Client({
 bot.commands = new Discord.Collection();
 const fs = require('fs');
 
-bot.login(config.token);
+bot.login("YOUR TOKEN HERE.");
 
 bot.on('ready', () => {
     bot.user.setActivity("%help", {
